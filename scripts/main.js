@@ -28,3 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTimer();
     setInterval(updateTimer, 1000);
 });
+

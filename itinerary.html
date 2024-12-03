@@ -3,50 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itinerario Completo</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Itinerario Completo - Movie & Game Sessions</title>
+    <link rel="stylesheet" href="styles/all_sessions.css">
 </head>
 <body>
     <header>
+        <h1>Itinerario Completo</h1>
         <nav class="navbar">
             <a href="index.html">Inicio</a>
-            <a href="upcoming.html">Próximas Sesiones</a>
-            <a href="itinerary.html">Itinerario Completo</a>
+            <a href="upcoming.html">Próxima Sesión</a>
+            <a href="#">Itinerario Completo</a>
         </nav>
     </header>
-
     <main>
-        <section id="itinerary">
-            <h1>Itinerario Completo</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Película</th>
-                        <th>Juego</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024-12-04</td>
-                        <td>Porco Rosso</td>
-                        <td>Catan</td>
-                    </tr>
-                    <tr>
-                        <td>2024-12-05</td>
-                        <td>Arrietty</td>
-                        <td>Cyclades</td>
-                    </tr>
-                    <!-- Añadir más filas aquí -->
-                </tbody>
-            </table>
+        <section id="sessions-list">
+            <h2>Explora Todas las Sesiones</h2>
+            <!-- Dia 0 -->
+            <div class="session-item">
+                <div class="session-image">
+                    <img src="images/day_0/sesion_0.jpg" alt="Mi casa" />
+                </div>
+                <div class="session-description">
+                    <h3>Verano Veraneado</h3>
+                    <p>
+                        En nuestra primera junta, lanzamos más que un programa: comenzamos una aventura. Un primer encuentro sin juegos ni películas, solo compañeros listos para lo que se viene.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dia 1 -->
+            <div class="session-item">
+                <div class="session-image">
+                    <img src="images/day_1/sesion_1.jpg" alt="Interstellar" />
+                </div>
+                <div class="session-description">
+                    <h3>Viaje Viajado</h3>
+                    <p>
+                        Déjate llevar por los sabores con crepes que harán que tu paladar viaje tan lejos como las estrellas. Dulces o salados, los crepes te llevarán directo al placer.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dia 2 -->
+            <div class="session-item">
+                <div class="session-image">
+                    <img src="images/day_2/sesion_2.jpg" alt="Oppenheimer" />
+                </div>
+                <div class="session-description">
+                    <h3>Bomba Bombastica</h3>
+                    <p>
+                        En esta sesión, la historia se convierte en un juego de poder y estrategia. Mientras Oppenheimer nos da una lección sobre las decisiones que cambiaron el mundo, en Catan luchamos por el dominio de tierras y recursos. Todo con tacos que añadirán el toque perfecto de sabor.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dia 3 -->
+            <div class="session-item">
+                <div class="session-image">
+                    <img src="images/day_3/sesion_3.jpg" alt="Castillo en el Cielo" />
+                </div>
+                <div class="session-description">
+                    <h3>Lejano Alejado</h3>
+                    <p>
+                        Esta sesión es una verdadera odisea: mientras Cyclades nos lleva a conquistar las islas, Castillo Andante nos transporta a un mundo de magia. Y mientras nuestras mentes luchan por la victoria, las frutas y yogurt nos mantendrán ligeros y energizados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dia 4 -->
+            <div class="session-item">
+                <div class="session-image">
+                    <img src="images/day_4/sesion_4.jpg" alt="El viaje de Chihiro" />
+                </div>
+                <div class="session-description">
+                    <h3>Casino Casero</h3>
+                    <p>
+                        En esta sesión, lo místico se combina con lo estratégico. Mientras Chihiro nos lleva a un mundo lleno de magia, nuestras cartas y dados nos desafían en una partida épica. Y para hacerlo aún mejor, los aperitivos estilo bar aseguran que todo quede delicioso.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dia 5 -->
+            <div class="session-item">
+                <div class="session-image">
+                    <img src="images/day_5/sesion_5.jpg" alt="???" />
+                </div>
+                <div class="session-description">
+                    <h3>Adivino Adivinador</h3>
+                    <p>
+                        Este panorama es el que desafía lo predecible. Cada sesión es una sorpresa, donde el juego, la película y la comida se reinventan para mantenernos en vilo. La incertidumbre es parte de la diversión.
+                    </p>
+                </div>
+            </div>
+
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Movie & Game Sessions</p>
     </footer>
-
-    <script src="scripts/main.js"></script>
 </body>
 </html>
