@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyne Joits</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Movie and Game Sessions</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Movie and Game Sessions</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="upcoming.html">Upcoming Sessions</a></li>
-                <li><a href="itinerary.html">Full Itinerary</a></li>
-            </ul>
+        <!-- Paginas -->
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <!-- Comentar las siguientes líneas para desactivar el acceso a las subpáginas -->
+            <!-- 
+            <a href="upcoming.html">Próximas Sesiones</a>
+            <a href="itinerary.html">Itinerario Completo</a>
+            -->
         </nav>
     </header>
 
     <main>
-        <section class="current-session">
-            <h2>Today's Session</h2>
-            <p>Today's movie is <strong>Porco Rosso</strong></p>
-            <img src="images/porco_rosso.jpg" alt="Porco Rosso Poster">
-            <p>Today's game is <strong>Catan</strong></p>
-            <img src="images/catan.jpg" alt="Catan Game">
+        <section id="intro">
+            <h1>Bienvenido a Zyne Joits</h1>
+            <p>¡Descubre nuestras sesiones diarias de películas y juegos!</p>
+        </section>
+
+        <!-- Contador -->
+        <section id="countdown">
+                        <h2>El proyecto se lanza en:</h2>
+            <div id="timer">
+                <span id="days">00</span>D : 
+                <span id="hours">00</span>H : 
+                <span id="minutes">00</span>M : 
+                <span id="seconds">00</span>S
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Movie and Game Sessions</p>
+        <p>&copy; 2024 Zyne Joits</p>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
