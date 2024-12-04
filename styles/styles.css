@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     background-color: #2c3e50;
     color: #fff;
@@ -38,9 +37,8 @@ header {
     background-color: #34495e;
 }
 
-/* Main */
 main {
-    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+    flex: 1;
     padding: 2rem;
     text-align: center;
 }
@@ -76,7 +74,6 @@ main {
     }
 }
 
-
 /* Footer */
 footer {
     background-color: #2c3e50;
@@ -94,142 +91,4 @@ h1, h2 {
     color: #2c3e50;
 }
 
-/* Estilo para los contenedores de las imágenes */
-.image-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 1.5rem;
-    border: 5px solid #34495e;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
-.movie-image, .game-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Estilo de las sesiones */
-.session {
-    background-color: #fff;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.session h2 {
-    color: #2c3e50;
-}
-
-.session p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-}
-
-/* Tabla para itinerario */
-table {
-    width: 100%;
-    margin-top: 2rem;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-table th, table td {
-    padding: 1rem;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #34495e;
-    color: #fff;
-}
-
-table td {
-    background-color: #f9f9f9;
-}
-
-table tr:nth-child(even) td {
-    background-color: #ecf0f1;
-}
-
-/* Enlaces dentro del contenido */
-a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #1abc9c;
-}
-
-/* Detalles del evento */
-.event-details {
-    background-color: #34495e;
-    color: #ecf0f1;
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.event-details h2 {
-    margin-bottom: 1rem;
-}
-
-.event-details p {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-}
-
-/* Estilo para la descripción de la película y el juego */
-.description {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin-top: 1rem;
-    line-height: 1.5;
-}
-
-/* Estilo para títulos con emojis */
-h2 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #2c3e50;
-    font-weight: 700;
-}
-
-/* Secciones (película, juego, comida) */
-section {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.meal p {
-    font-size: 1.1rem;
-    color: #2c3e50;
-}
-
-/* Imágenes */
-.image-container {
-    margin: 1rem auto;
-    border: 5px solid #ecf0f1;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-}
-
-/* Efecto hover en imágenes */
-.image-container:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-}

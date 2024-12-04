@@ -17,6 +17,7 @@ header {
     padding: 1rem;
 }
 
+/* Barra de navegacion */
 .navbar {
     display: flex;
     justify-content: center;
@@ -41,6 +42,7 @@ main {
     padding: 2rem;
 }
 
+/* Casillas sesiones */
 #next-session {
     text-align: center;
     padding: 1rem;
@@ -82,28 +84,28 @@ main {
 
 .description {
     font-size: 1.1rem;
-    color: #34495e; /* Color de texto más oscuro */
+    color: black;
     margin-top: 10px;
-    background: linear-gradient(135deg, #e8f6f3, #d5dbdb); /* Fondo con degradado suave */
+    background: linear-gradient(135deg, #e8f6f3, #d5dbdb);
     padding: 20px;
-    border-left: 5px solid #3498db; /* Barra de color en el lado izquierdo */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra para resaltar */
-    text-align: left; /* Texto alineado a la izquierda */
-    font-style: italic; /* Toque estilizado al texto */
-    line-height: 1.6; /* Espaciado entre líneas */
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-style: italic;
+    line-height: 1.6;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efecto hover en las descripciones */
 .description:hover {
-    transform: scale(1.02); /* Sutil agrandamiento */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más profundidad en la sombra */
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Espaciado entre elementos */
 .item {
-    margin-bottom: 2.5rem; /* Más separación entre bloques */
+    margin-bottom: 2.5rem;
 }
 
 footer {
