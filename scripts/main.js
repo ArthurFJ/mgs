@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const countdown = document.getElementById("timer");
     if (!countdown) return; // Salir si el contador está desactivado
 
-    const launchDate = new Date("2024-12-13T20:00:00").getTime();
+    const launchDate = new Date("2024-12-14T16:00:00").getTime();
 
     function updateTimer() {
         const now = new Date().getTime();
