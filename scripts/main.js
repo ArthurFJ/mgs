@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.leaderboard-container');
 
     // Limpiar el contenedor antes de insertar las barras ordenadas
-    container.innerHTML = '<h2>Leaderboard</h2>';
+    container.innerHTML = '<h2>???</h2>';
 
     // Reinsertar las barras ordenadas en el DOM y actualizar las posiciones, puntajes y animación
     sortedBars.forEach((bar, index) => {
