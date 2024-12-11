@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Hoyts</title>
     <link rel="icon" href="images/wsp.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
+
     <header>
+        <h1>Pagina de inicio</h1>
         <!-- Paginas -->
         <nav class="navbar">
             <a href="index.html">Inicio</a>
-            
-            <!-- Comentar las siguientes líneas para desactivar el acceso a las subpáginas -->
-             
             <a href="upcoming.html">Próxima Sesion</a>
-            <!-- <a href="itinerary.html">Itinerario Completo</a> -->
+            
+            <!-- Comentar la siguiente línea para desactivar el acceso a la subpágina -->
+
+            <!-- <a href="all_sessions.html">Itinerario Completo</a> -->
            
         </nav>
     </header>
 
     <main>
+        
         <section id="intro">
             <h1>Bienvenido a Games Hoyts</h1>
         </section>
@@ -66,6 +71,14 @@
                     <span class="score">0</span>
                 </div>
             </div>
+
+            <!-- Spoilers -->
+            <div id="spoiler" class="spoiler">
+                <div id="spoiler-content">
+                    <div id="animation-container"></div>
+                    <button id="close-spoiler">Cerrar</button>
+                </div>
+            </div>
         </section>    
          
     </main>
@@ -75,6 +88,8 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
 </body>
 </html>
 

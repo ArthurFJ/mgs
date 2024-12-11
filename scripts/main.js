@@ -29,31 +29,57 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTimer, 1000);
 });
 
-
+// Animaciones de "Spoilers"
 document.addEventListener('DOMContentLoaded', () => {
-    // Obtener todas las barras del leaderboard
+    const leaderboardBars = document.querySelectorAll('.leaderboard-bar');
+    const spoiler = document.getElementById('spoiler');
+    const closeButton = document.getElementById('close-spoiler');
+    const animationContainer = document.getElementById('animation-container');
+
+    const animations = [
+        'jsons/animation_1.json',
+        'jsons/animation_2.json',
+        'jsons/animation_4.json',
+        'jsons/animation_3.json',
+    ];
+
+    leaderboardBars.forEach((bar, index) => {
+        bar.addEventListener('click', () => {
+            spoiler.style.display = 'flex';
+
+            lottie.loadAnimation({
+                container: animationContainer,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: animations[index]
+            });
+        });
+    });
+
+    closeButton.addEventListener('click', () => {
+        spoiler.style.display = 'none';
+        animationContainer.innerHTML = '';
+    });
+});
+
+// Actualizar orden de puntajes
+document.addEventListener('DOMContentLoaded', () => {
     const leaderboardBars = document.querySelectorAll('.leaderboard-bar');
 
-    // Convertir las barras a un array y ordenarlas por puntaje (data-score)
     const sortedBars = Array.from(leaderboardBars).sort((a, b) => {
-        // Parsear los puntajes de los atributos data-score
         const scoreA = parseInt(a.getAttribute('data-score'));
         const scoreB = parseInt(b.getAttribute('data-score'));
         return scoreB - scoreA; // Orden descendente
     });
 
-    // Seleccionar el contenedor de las barras
     const container = document.querySelector('.leaderboard-container');
 
-    // Limpiar el contenedor antes de insertar las barras ordenadas
     container.innerHTML = '<h2>???</h2>';
 
-    // Reinsertar las barras ordenadas en el DOM y actualizar las posiciones, puntajes y animación
     sortedBars.forEach((bar, index) => {
-        // Eliminar clases previas relacionadas con la posición
         bar.classList.remove('first-place', 'second-place', 'third-place', 'fourth-place');
 
-        // Asignar clases de posición dinámicamente
         if (index === 0) {
             bar.classList.add('first-place');
         } else if (index === 1) {
@@ -64,13 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
             bar.classList.add('fourth-place');
         }
 
-        // Actualizar el texto de las posiciones (1, 2, 3, ...)
         bar.querySelector('.position').textContent = index + 1;
 
-        // Actualizar el texto de los puntajes
         bar.querySelector('.score').textContent = bar.getAttribute('data-score');
 
-        // Volver a insertar la barra ordenada en el contenedor
         container.appendChild(bar);
     });
 });
