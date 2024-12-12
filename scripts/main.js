@@ -1,7 +1,7 @@
 // Configuración del contador
 document.addEventListener("DOMContentLoaded", () => {
     const countdown = document.getElementById("timer");
-    if (!countdown) return; // Salir si el contador está desactivado
+    if (!countdown) return;
 
     const launchDate = new Date("2024-12-16T14:00:00").getTime();
 
@@ -28,6 +28,45 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTimer();
     setInterval(updateTimer, 1000);
 });
+
+
+// Logro
+document.addEventListener("DOMContentLoaded", () => {
+    const animationContainer = document.getElementById("animation-container");
+    const animations = [
+        { path: "jsons/animation_0.json", duration: 4000 },
+        { path: "jsons/animation_00.json", duration: 2200 },
+        { path: "jsons/animation_000.json", duration: 5500 },
+        { path: "jsons/animation_0000.json", duration: 6000 },
+    ];
+    let currentAnimation = 0;
+
+    const loadAnimation = (animation) => {
+        animationContainer.innerHTML = "";
+
+        lottie.loadAnimation({
+            container: animationContainer,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: animation.path,
+        });
+    };
+
+    const startAnimationLoop = () => {
+        const animation = animations[currentAnimation];
+        loadAnimation(animation);
+
+        setTimeout(() => {
+            currentAnimation = (currentAnimation + 1) % animations.length;
+            startAnimationLoop();
+        }, animation.duration);
+    };
+
+    startAnimationLoop();
+});
+
+
 
 // Animaciones de "Spoilers"
 document.addEventListener('DOMContentLoaded', () => {
@@ -63,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 // Actualizar orden de puntajes
 document.addEventListener('DOMContentLoaded', () => {
     const leaderboardBars = document.querySelectorAll('.leaderboard-bar');
@@ -74,8 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const container = document.querySelector('.leaderboard-container');
-
-    container.innerHTML = '<h2>???</h2>';
 
     sortedBars.forEach((bar, index) => {
         bar.classList.remove('first-place', 'second-place', 'third-place', 'fourth-place');

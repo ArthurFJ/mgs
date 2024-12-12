@@ -85,6 +85,32 @@ h2 {
     color: #2c3e50;
 }
 
+/* Animaciones */
+#animation-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    height: 300px; /* Ajusta según el tamaño de las animaciones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+#animation-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
 #leaderboard {
     margin: 20px auto;
     padding: 20px;
