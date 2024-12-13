@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Logro
 document.addEventListener("DOMContentLoaded", () => {
-    const animationContainer = document.getElementById("animation-container");
+    const animationContainer = document.getElementById("logro-animation-container");
     const animations = [
         { path: "jsons/animation_0.json", duration: 4000 },
         { path: "jsons/animation_00.json", duration: 2200 },
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sortedBars = Array.from(leaderboardBars).sort((a, b) => {
         const scoreA = parseInt(a.getAttribute('data-score'));
         const scoreB = parseInt(b.getAttribute('data-score'));
-        return scoreB - scoreA; // Orden descendente
+        return scoreB - scoreA;
     });
 
     const container = document.querySelector('.leaderboard-container');
