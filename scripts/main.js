@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const countdown = document.getElementById("timer");
     if (!countdown) return;
 
-    const launchDate = new Date("2024-12-16T14:00:00").getTime();
+    const launchDate = new Date("2024-12-17T14:00:00").getTime();
 
     function updateTimer() {
         const now = new Date().getTime();
